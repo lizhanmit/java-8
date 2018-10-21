@@ -2,12 +2,26 @@
 
 If you use an interface to declare the lambda function, this interface can only have one abstract method. But it is allowed to have one or more implemented methods.  
 
-Runnable interface is a typical example as it only contains one abstract method: run().
+`Runnable` interface is a typical example as it only contains one abstract method: `run()`.
 
-> From Java 8, an interface can have implemented methods. (Before Java 8, an interface can only have abstract methods.)
+From Java 8, an interface can have implemented methods. (Before Java 8, an interface can only have abstract methods.)
 
-Functional interface: the interface only has one abstract method, which is used for declaring lambda functions. 
+**Functional interface**: the interface only has one abstract method, which is used for declaring lambda functions. 
 
 In order to make sure the interface is a functional interface and it will not be misused by others, it is a good practice to add the annotation `@FunctionalInterface` at the top of the interface, although it is optional.
 
+## Java Build-in Functional Interfaces
+
 Java 8 has some out-of-box interfaces for using lambda expression in common scenarios, such as `Prediction`, `Supplier`, and `Function`, so that you do not need to create an interface yourself. 
+
+### Predicate<T>
+
+Represents a predicate (boolean-valued function) of one argument. Accepts a single input argument and returns a boolean result. 
+
+### Consumer<T>	
+
+Represents an operation that accepts a single input argument and returns no result. E.g. print an object. 
+
+### BiConsumer<T,U>	
+
+Represents an operation that accepts two input arguments and returns no result.
