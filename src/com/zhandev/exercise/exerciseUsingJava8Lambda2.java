@@ -3,9 +3,14 @@ package com.zhandev.exercise;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-public class exerciseUsingJava8Lambda {
+/**
+ * Instead of using printConditionally() in exerciseUsingJava8Lambda.java, you can generalize the behavior of the function by add a new parameter to specify the behavior. 
+ * Here we replace printConditionally() with performConditionally().
+ */
+public class exerciseUsingJava8Lambda2 {
 
 	public static void main(String[] args) {
 
@@ -26,27 +31,27 @@ public class exerciseUsingJava8Lambda {
 		 * create a method that prints all elements in the list 
 		 */
 		System.out.println("------ print all ------");
-		printConditionally(people, p -> true);
+		performConditionally(people, p -> true, p -> System.out.println(p));
 		
 		
 		/*
 		 * create a method that prints all people who have the last name beginning with "Z"
 		 */
 		System.out.println("------ print people who have the last name beginning with 'Z' ------");
-		printConditionally(people, p -> p.getLastName().startsWith("Z"));
+		performConditionally(people, p -> p.getLastName().startsWith("Z"), p -> System.out.println(p));
 		
 		
 		/*
 		 * create a method that prints all people who are older than 25 
 		 */
 		System.out.println("------ print people who have are older than 25 ------");
-		printConditionally(people, p -> p.getAge() > 25);
+		performConditionally(people, p -> p.getAge() > 25, p -> System.out.println(p));
 	}
 
-	private static void printConditionally(List<Person> people, Predicate<Person> predicate) {
+	private static void performConditionally(List<Person> people, Predicate<Person> predicate, Consumer<Person> consumer) {
 		for (Person person : people) {
 			if (predicate.test(person)) {
-				System.out.println(person);
+				consumer.accept(person);
 			}
 		}
 	}
