@@ -25,3 +25,17 @@ Represents an operation that accepts a single input argument and returns no resu
 ### BiConsumer<T,U>	
 
 Represents an operation that accepts two input arguments and returns no result.
+
+## Method References 
+
+- No input argument of the lambda expression and the method (static method)
+
+	- Lambda expression: `() -> <method_name>()`
+
+	- Method reference expression: `<class_name>::<method_name>`
+
+## Iteration 
+
+In Java 7, for loop and foreach loop are external iteration. 
+
+In Java 8, the `forEach()` method of collection is internal iteration, which makes it possible to use multi-threading and parallelism. 
