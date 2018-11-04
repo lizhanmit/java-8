@@ -39,3 +39,15 @@ Represents an operation that accepts two input arguments and returns no result.
 In Java 7, for loop and foreach loop are external iteration. 
 
 In Java 8, the `forEach()` method of collection is internal iteration, which makes it possible to use multi-threading and parallelism. 
+
+## Stream
+
+Stream is a sequence of elements supporting sequential and parallel aggregate operations. 
+
+Three elements of the stream: 
+
+- Source: collection. 
+- Operations that need to be performed on the stream. 
+- Terminal operation or end condition.
+
+Parallel stream can be created if multiple cores are potentially to be used. 
