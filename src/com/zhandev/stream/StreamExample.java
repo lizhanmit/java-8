@@ -27,8 +27,8 @@ public class StreamExample {
 		
 		// parallel stream can be created if multiple cores are potentially to be used
 		long count = people.parallelStream()
-		.filter(p -> p.getLastName().startsWith("Z"))
-		.count();
+							.filter(p -> p.getLastName().startsWith("Z"))
+							.count();
 		
 		System.out.println(count);
 

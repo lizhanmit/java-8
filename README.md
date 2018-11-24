@@ -50,4 +50,4 @@ Three elements of the stream:
 - Operations that need to be performed on the stream. 
 - Terminal operation or end condition.
 
-Parallel stream can be created if multiple cores are potentially to be used. 
+**Parallel stream** can be created if multiple cores are potentially to be used. 
