@@ -1,7 +1,10 @@
 package com.zhandev.stream;
 
 import java.util.Arrays;
+import java.util.IntSummaryStatistics;
 import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
 
 import com.zhandev.exercise.Person;
 
@@ -31,6 +34,27 @@ public class StreamExample {
 							.count();
 		
 		System.out.println(count);
-
+		
+		
+		
+		List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd", "", "jkl");
+		
+		long countOfEmptyString = strings.stream().filter(s -> s.isEmpty()).count();
+		System.out.println(countOfEmptyString);
+		
+		List<String> filteredStrings = strings.stream().filter(s -> !s.isEmpty()).collect(Collectors.toList());
+		System.out.println(filteredStrings);
+		
+	    
+		List<Integer> integers = Arrays.asList(1, 2, 13, 4, 15, 6, 17, 8, 19);
+		IntSummaryStatistics stats = integers.stream().mapToInt(x -> x).summaryStatistics();
+		System.out.println(stats.getMax());
+		System.out.println(stats.getMin());
+		System.out.println(stats.getSum());
+		System.out.println(stats.getAverage());
+		
+		
+		new Random().ints(10).sorted().forEach(System.out::println);
+		
 	}
 }
