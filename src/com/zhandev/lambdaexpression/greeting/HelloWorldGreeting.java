@@ -1,4 +1,4 @@
-package com.zhandev;
+package com.zhandev.lambdaexpression.greeting;
 
 public class HelloWorldGreeting implements Greeting {
 

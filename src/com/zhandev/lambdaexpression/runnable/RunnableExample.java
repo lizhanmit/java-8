@@ -1,4 +1,4 @@
-package com.zhandev;
+package com.zhandev.lambdaexpression.runnable;
 
 public class RunnableExample {
 

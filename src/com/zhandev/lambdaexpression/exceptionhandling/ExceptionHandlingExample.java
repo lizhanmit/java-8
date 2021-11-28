@@ -1,4 +1,4 @@
-package com.zhandev;
+package com.zhandev.lambdaexpression.exceptionhandling;
 
 import java.util.function.BiConsumer;
 
