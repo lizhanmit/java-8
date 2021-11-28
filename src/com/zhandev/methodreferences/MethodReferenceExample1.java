@@ -1,4 +1,4 @@
-package com.zhandev.methodReferences;
+package com.zhandev.methodreferences;
 
 public class MethodReferenceExample1 {
 

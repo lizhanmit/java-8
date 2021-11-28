@@ -1,4 +1,4 @@
-package com.zhandev.methodReferences;
+package com.zhandev.methodreferences;
 
 import java.util.Arrays;
 import java.util.List;
