@@ -56,8 +56,6 @@ Method references help to point to methods by their names. A method reference is
 - Instance methods
 - Constructors using `new` operator (`TreeSet::new`)
 
-There should be no input argument of the method.
-
 ---
 
 ## Default Methods
