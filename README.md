@@ -1,6 +1,7 @@
 # Java 8 Note 
 
 - [Java 8 Note](#java-8-note)
+	- [Lambda Functions](#lambda-functions)
 	- [Functional Interfaces](#functional-interfaces)
 		- [Java Build-in Functional Interfaces](#java-build-in-functional-interfaces)
 			- [`Predicate<T>`](#predicatet)
@@ -13,6 +14,12 @@
 		- [Statistics](#statistics)
 	- [Iteration](#iteration)
 	- [`Optional`](#optional)
+
+---
+
+## Lambda Functions
+
+![java-7-vs-8-lambda.png](img/java-7-vs-8-lambda.png)
 
 ---
 
